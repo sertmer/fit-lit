@@ -5,16 +5,6 @@
   padding: 0;
 }
 
-/* * { background-color: rgba(255,0,0,.2); }
-* * { background-color: rgba(0,255,0,.2); }
-* * * { background-color: rgba(0,0,255,.2); }
-* * * * { background-color: rgba(255,0,255,.2); }
-* * * * * { background-color: rgba(0,255,255,.2); }
-* * * * * * { background-color: rgba(255,255,0,.2); }
-* * * * * * * { background-color: rgba(255,0,0,.2); }
-* * * * * * * * { background-color: rgba(0,255,0,.2); }
-* * * * * * * * * { background-color: rgba(0,0,255,.2); } */
-
 body {
   font-family: 'Titillium Web', sans-serif;
   width: 100%;
@@ -27,8 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url("../images/login-background-screenshot.png"); */
-  /* background-size: cover; */
 }
 
 .login-background {
@@ -444,11 +432,11 @@ p {
   background-color: lightgrey;
   border-radius: 5px;
   padding: 10px;
-  width: 22%;
+  width: 19%;
 }
 
 .step-challenge-section {
-  width: 50%;
+  width: 55%;
   margin: 150px auto;
 }
 
