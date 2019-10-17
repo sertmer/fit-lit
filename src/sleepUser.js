@@ -1,6 +1,6 @@
 class SleepUser {
-  constructor(userSleepData) {
-    this.sleepData = userSleepData;
+  constructor(userSleepData){
+  this.sleepData = userSleepData;
   }
 
   calcAvgSleepPerDay(property) {
@@ -14,7 +14,7 @@ class SleepUser {
 
   getSleepDataDay(date, property) {
     return this.sleepData.reduce((acc, object) => {
-      if (object.date === date) {
+      if(object.date === date) {
         acc += object[property];
       }
       return acc;
@@ -34,13 +34,13 @@ class SleepUser {
     let dateIndex = dataDate.lastIndexOf(date);
     let weekData = this.sleepData.slice(dateIndex - 7, dateIndex + 1);
     let avgWeekHoursSlept = weekData.reduce((acc, day) => {
-      if (!acc[avgPropertyNames]) {
+      if(!acc[avgPropertyNames]) {
         acc[avgPropertyNames] = 0;
       }
       acc[avgPropertyNames] += day[property];
       return acc;
-    }, { date: `${weekData[0].date} - ${weekData[7].date}` })
-    avgWeekHoursSlept[avgPropertyNames] = avgWeekHoursSlept[avgPropertyNames] / 8;
+    }, {date: `${weekData[0].date} - ${weekData[7].date}`})
+    avgWeekHoursSlept[avgPropertyNames] = Math.round((avgWeekHoursSlept[avgPropertyNames] / 8) * 100) / 100;
     return avgWeekHoursSlept;
   }
 
