@@ -1,6 +1,10 @@
 # FitLit - The Best Fitness Tracker You've Never Heard Of
 ### Contributors: John Rodgers Adams and Scott Ertmer
 
+#### View Project Here
+* https://sertmer.github.io/fit-lit/src/index.html
+* Example emails to login: Dylan_Langworth65@hotmail.com - Waylon_Zulauf@hotmail.com - Aisha6@gmail.com
+
 #### A Mod 2 paired project intended to develop skills around:
 * Implementing ES6 classes
 * Modular, SRP code
